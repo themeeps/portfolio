@@ -13,7 +13,7 @@ export default function Projects() {
     {
       title: 'Task Management App',
       description: 'Collaborative project management tool with real-time updates, team chat, and progress tracking.',
-      tags: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind'],
+      tags: ['Next.js', 'TypeScript', 'Supabase', 'Bootstrap'],
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
       github: '#',
       demo: '#'
@@ -37,7 +37,7 @@ export default function Projects() {
     {
       title: 'Weather Forecast App',
       description: 'Beautiful weather application with location-based forecasts, interactive maps, and weather alerts.',
-      tags: ['React', 'OpenWeather API', 'Tailwind', 'Mapbox'],
+      tags: ['React', 'OpenWeather API', 'Bootstrap', 'Mapbox'],
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
       github: '#',
       demo: '#'
@@ -53,59 +53,55 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-slate-50">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Featured Projects
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto"></div>
+    <section id="projects" className="py-5 bg-light">
+      <div className="container py-5">
+        <div className="text-center mb-5">
+          <h2 className="display-4 fw-bold mb-3">Featured Projects</h2>
+          <div className="bg-gradient-primary mx-auto" style={{ width: '80px', height: '4px' }}></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="row g-4">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-100"
-            >
-              <div className="relative overflow-hidden h-52">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{project.title}</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">{project.description}</p>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+            <div className="col-lg-4 col-md-6" key={index}>
+              <div className="card h-100 border-0 shadow-sm project-card card-hover">
+                <div className="overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="card-img-top project-image"
+                  />
                 </div>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold mb-3">{project.title}</h5>
+                  <p className="card-text text-muted mb-3">{project.description}</p>
 
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    className="flex items-center gap-2 text-slate-600 hover:text-cyan-600 transition-colors duration-300 font-medium"
-                  >
-                    <Github size={18} />
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 text-slate-600 hover:text-cyan-600 transition-colors duration-300 font-medium"
-                  >
-                    <ExternalLink size={18} />
-                    <span>Demo</span>
-                  </a>
+                  <div className="d-flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="badge bg-light text-dark border"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="d-flex gap-3">
+                    <a
+                      href={project.github}
+                      className="text-decoration-none text-muted d-flex align-items-center gap-2 fw-semibold"
+                    >
+                      <Github size={18} />
+                      <span>Code</span>
+                    </a>
+                    <a
+                      href={project.demo}
+                      className="text-decoration-none text-muted d-flex align-items-center gap-2 fw-semibold"
+                    >
+                      <ExternalLink size={18} />
+                      <span>Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -2,39 +2,39 @@ import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 py-12">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center">
-          <div className="flex gap-6 mb-6">
+    <footer className="bg-dark text-light py-5">
+      <div className="container">
+        <div className="text-center">
+          <div className="d-flex justify-content-center gap-4 mb-4">
             <a
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition-colors duration-300"
+              className="social-icon text-decoration-none"
             >
-              <Github size={24} />
+              <Github size={28} />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-cyan-400 transition-colors duration-300"
+              className="social-icon text-decoration-none"
             >
-              <Linkedin size={24} />
+              <Linkedin size={28} />
             </a>
             <a
               href="mailto:contact@example.com"
-              className="hover:text-cyan-400 transition-colors duration-300"
+              className="social-icon text-decoration-none"
             >
-              <Mail size={24} />
+              <Mail size={28} />
             </a>
           </div>
 
-          <p className="text-sm text-slate-400 flex items-center gap-2">
-            Made with <Heart size={16} className="text-red-500 fill-red-500" /> by John Programmer
+          <p className="text-secondary mb-2 d-flex align-items-center justify-content-center gap-2">
+            Made with <Heart size={16} className="text-danger" style={{ fill: 'currentColor' }} /> by John Programmer
           </p>
 
-          <p className="text-sm text-slate-500 mt-2">
+          <p className="text-secondary small mb-0">
             &copy; {new Date().getFullYear()} All rights reserved.
           </p>
         </div>
