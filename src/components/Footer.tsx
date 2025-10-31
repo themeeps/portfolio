@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="text-center">
           <div className="d-flex justify-content-center gap-4 mb-4">
             <a
-              href="https://github.com"
+              href="https://github.com/themeeps"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon text-decoration-none"
@@ -15,7 +15,7 @@ export default function Footer() {
               <Github size={28} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sayyid-ali-a5722b201?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSBmO%2Fa9%2BTxeN%2BeQsV3Utwg%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon text-decoration-none"
@@ -23,7 +23,7 @@ export default function Footer() {
               <Linkedin size={28} />
             </a>
             <a
-              href="mailto:contact@example.com"
+              href="mailto:sayyidali195@gmail.com"
               className="social-icon text-decoration-none"
             >
               <Mail size={28} />
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           <p className="text-secondary mb-2 d-flex align-items-center justify-content-center gap-2">
-            Made with <Heart size={16} className="text-danger" style={{ fill: 'currentColor' }} /> by John Programmer
+            Created by Sayyid Ali Akbar Haraki
           </p>
 
           <p className="text-secondary small mb-0">
