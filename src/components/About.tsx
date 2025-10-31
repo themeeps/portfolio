@@ -30,10 +30,7 @@ export default function About() {
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <p className="lead text-center text-muted mb-5">
-              I'm a passionate full-stack developer with 5+ years of experience building web applications.
-              I love turning ideas into reality through code, with a focus on creating intuitive user experiences
-              and robust backend systems. When I'm not coding, you'll find me exploring new technologies or
-              contributing to open-source projects.
+              Full-Stack Developer with 3+ years of experience building high-quality web and mobile applications. Skilled in designing scalable systems, optimizing performance, and delivering seamless user experiences. Known for turning complex ideas into efficient, reliable solutions while driving innovation and technical excellence.
             </p>
 
             <div className="row g-4">
