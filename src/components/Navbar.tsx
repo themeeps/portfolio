@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className={`navbar navbar-expand-lg navbar-dark fixed-top navbar-custom ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container">
         <a className="navbar-brand fw-bold text-gradient fs-3" href="#home">
-          JP
+          Part of Me
         </a>
 
         <button

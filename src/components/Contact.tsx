@@ -44,7 +44,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="fw-semibold mb-1">Email</h5>
-                  <p className="text-muted mb-0">contact@example.com</p>
+                  <p className="text-muted mb-0">sayyidali195@gmail.com</p>
                 </div>
               </div>
 
@@ -54,7 +54,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="fw-semibold mb-1">Phone</h5>
-                  <p className="text-muted mb-0">+62 812 3456 7890</p>
+                  <p className="text-muted mb-0">+6281399053740</p>
                 </div>
               </div>
 
@@ -64,7 +64,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="fw-semibold mb-1">Location</h5>
-                  <p className="text-muted mb-0">Jakarta, Indonesia</p>
+                  <p className="text-muted mb-0">Cempaka Baru IX No,03 RT003/RW007, Kel. Cempaka Baru, Kec. Kemayoran, Jakarta Pusat, Kodepos : 10640</p>
                 </div>
               </div>
             </div>

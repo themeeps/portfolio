@@ -1,54 +1,54 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured online shopping platform with payment integration, inventory management, and user authentication.',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#'
+      title: 'Nexilis.io (Current Project)',
+      description: `Nexilis.io is a web platform for mobile applications designed to help users manage and develop digital solutions. With flexible and intuitive features, Nexilis.io allows users to easily create applications without requiring extensive technical knowledge. This platform can be used for various purposes, such as developing applications for business, education, or communities.`,
+      tags: ['PHP', 'HTML', 'Javascript', 'Bootstrap', 'PostgreSQL'],
+      image: 'nexilis.png',
+      // github: '#',
+      demo: 'https://nexilis.io/TrustedChannel'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates, team chat, and progress tracking.',
-      tags: ['Next.js', 'TypeScript', 'Supabase', 'Bootstrap'],
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#'
+      title: 'Oneapp (Current Project)',
+      description: `OneApp is one of several implementations on the Nexilis.io platform. With OneApp, users can access a variety of features in one app, making everything more practical and efficient. So, there's no need to install multiple apps; everything can be accessed in one place.`,
+      tags: ['PHP', 'HTML', 'Javascript', 'Bootstrap', 'MySQL'],
+      image: 'oneapp.png',
+      // github: '#',
+      demo: 'https://play.google.com/store/apps/details?id=io.nexilis.oneapp&hl=en'
     },
     {
-      title: 'Analytics Dashboard',
-      description: 'Real-time analytics dashboard with interactive charts, data visualization, and export functionality.',
-      tags: ['Vue.js', 'Python', 'MongoDB', 'Chart.js'],
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#'
+      title: 'FelloX Spin',
+      description: 'Fellox Spin is a roulette-based platform that allows users to win prizes. The roulette wheel spins using a scanner through the FelloX app. Password = jatelindo@nexilis',
+      tags: ['Next.js', 'Node.js', 'MySQL', 'Bootstrap', 'Chart.js'],
+      image: 'felloxspin.png',
+      // github: '#',
+      demo: 'https://nexilis.io/fekdi/get_fellox_scan'
     },
     {
-      title: 'Social Media API',
-      description: 'RESTful API for social networking features including posts, comments, likes, and user relationships.',
-      tags: ['Express', 'PostgreSQL', 'JWT', 'Redis'],
+      title: 'Satu iDesa',
+      description: `Satu iDesa is an integrated application that provides various village-related services and information on a single platform. Its goal is to facilitate village communities' digital access to public services, information, and economic and social activities.`,
+      tags: ['React', 'Node.js', 'Bootstrap', 'MySQL'],
+      image: 'idesa.png',
+      // github: '#',
+      demo: 'https://newuniverse.io/nexilis/idesa-app/index.html'
+    },
+    {
+      title: 'BJB App',
+      description: 'BJB Appis a digital banking service application from bank bjb that makes it easy for customers to access various financial services online. Through this application, users can conduct banking transactions anytime, anywhere, safely, quickly, and conveniently.',
+      tags: ['React', 'Node.js', 'Bootstrap', 'MySQL'],
+      image: 'bjb.png',
+      // github: '#',
+      demo: 'https://newuniverse.io/nexilis/bjb-app/index.html'
+    },
+    {
+      title: 'Digixplatform',
+      description: 'DigiXplatform is a web platform or portal designed to assist users with digital solutions. This web portal was created in collaboration with Nexilis (EasySoft) and Telkomsel.',
+      tags: ['PHP', 'HTML', 'Javascript', 'Bootstrap', 'MySQL'],
       image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#'
-    },
-    {
-      title: 'Weather Forecast App',
-      description: 'Beautiful weather application with location-based forecasts, interactive maps, and weather alerts.',
-      tags: ['React', 'OpenWeather API', 'Bootstrap', 'Mapbox'],
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#'
-    },
-    {
-      title: 'Blog Platform',
-      description: 'Modern blogging platform with markdown support, SEO optimization, and content management system.',
-      tags: ['Next.js', 'MDX', 'Vercel', 'CMS'],
-      image: 'https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#'
+      // github: '#',
+      // demo: '#'
     }
   ];
 
@@ -63,7 +63,7 @@ export default function Projects() {
         <div className="row g-4">
           {projects.map((project, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
-              <div className="card h-100 border-0 shadow-sm project-card card-hover">
+              <div className="card h-100 border-0 shadow-md project-card card-hover">
                 <div className="overflow-hidden">
                   <img
                     src={project.image}
@@ -87,20 +87,22 @@ export default function Projects() {
                   </div>
 
                   <div className="d-flex gap-3">
-                    <a
+                    {/* <a
                       href={project.github}
                       className="text-decoration-none text-muted d-flex align-items-center gap-2 fw-semibold"
                     >
                       <Github size={18} />
                       <span>Code</span>
-                    </a>
-                    <a
-                      href={project.demo}
-                      className="text-decoration-none text-muted d-flex align-items-center gap-2 fw-semibold"
-                    >
-                      <ExternalLink size={18} />
-                      <span>Demo</span>
-                    </a>
+                    </a> */}
+                    {project.title != 'Digixplatform' ? (
+                      <a
+                        href={project.demo}
+                        className="text-decoration-none text-muted d-flex align-items-center gap-2 fw-semibold"
+                      >
+                        <ExternalLink size={18} />
+                        <span>Visit</span>
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </div>

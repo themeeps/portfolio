@@ -10,15 +10,15 @@ export default function Hero() {
               <div className="d-inline-block p-1 rounded-circle bg-gradient-primary">
                 <div
                   className="bg-dark rounded-circle d-flex align-items-center justify-content-center text-gradient fw-bold"
-                  style={{ width: '120px', height: '120px', fontSize: '3rem' }}
+                  style={{ width: '165px', height: '165px', fontSize: '3rem' }}
                 >
-                  JP
+                  <img src="profile_ali.png" className="rounded-circle" alt="John Programmer" width="165" height="165" />
                 </div>
               </div>
             </div>
 
             <h1 className="display-3 fw-bold text-white mb-3">
-              Hi, I'm <span className="text-gradient">John Programmer</span>
+              Hi, I'm <span className="text-gradient">Sayyid Ali Akbar H</span>
             </h1>
 
             <p className="fs-4 text-white-50 mb-4">
@@ -39,13 +39,13 @@ export default function Hero() {
             </div>
 
             <div className="d-flex gap-4 justify-content-center">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon text-decoration-none">
+              <a href="https://github.com/themeeps" target="_blank" rel="noopener noreferrer" className="social-icon text-decoration-none">
                 <Github size={28} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon text-decoration-none">
+              <a href="https://www.linkedin.com/in/sayyid-ali-a5722b201?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSBmO%2Fa9%2BTxeN%2BeQsV3Utwg%3D%3D" target="_blank" rel="noopener noreferrer" className="social-icon text-decoration-none">
                 <Linkedin size={28} />
               </a>
-              <a href="mailto:contact@example.com" className="social-icon text-decoration-none">
+              <a href="mailto:sayyidali195@gmail.com" className="social-icon text-decoration-none">
                 <Mail size={28} />
               </a>
             </div>
