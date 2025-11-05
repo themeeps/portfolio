@@ -6,7 +6,7 @@ export default function Projects() {
       title: 'Nexilis.io (Current Project)',
       description: `Nexilis.io is a web platform for mobile applications designed to help users manage and develop digital solutions. With flexible and intuitive features, Nexilis.io allows users to easily create applications without requiring extensive technical knowledge. This platform can be used for various purposes, such as developing applications for business, education, or communities.`,
       tags: ['PHP', 'HTML', 'Javascript', 'Bootstrap', 'PostgreSQL'],
-      image: 'nexilis.png',
+      image: 'nexilis_new.png',
       // github: '#',
       demo: 'https://nexilis.io/TrustedChannel'
     },
@@ -14,7 +14,7 @@ export default function Projects() {
       title: 'Oneapp (Current Project)',
       description: `OneApp is one of several implementations on the Nexilis.io platform. With OneApp, users can access a variety of features in one app, making everything more practical and efficient. So, there's no need to install multiple apps; everything can be accessed in one place.`,
       tags: ['PHP', 'HTML', 'Javascript', 'Bootstrap', 'MySQL'],
-      image: 'oneapp.png',
+      image: 'oneapp_new.png',
       // github: '#',
       demo: 'https://play.google.com/store/apps/details?id=io.nexilis.oneapp&hl=en'
     },
@@ -22,7 +22,7 @@ export default function Projects() {
       title: 'FelloX Spin',
       description: 'Fellox Spin is a roulette-based platform that allows users to win prizes. The roulette wheel spins using a scanner through the FelloX app. Password = jatelindo@nexilis',
       tags: ['Next.js', 'Node.js', 'MySQL', 'Bootstrap', 'Chart.js'],
-      image: 'felloxspin.png',
+      image: 'felloxspin_new.png',
       // github: '#',
       demo: 'https://nexilis.io/fekdi/get_fellox_scan'
     },
@@ -30,23 +30,23 @@ export default function Projects() {
       title: 'Satu iDesa',
       description: `Satu iDesa is an integrated application that provides various village-related services and information on a single platform. Its goal is to facilitate village communities' digital access to public services, information, and economic and social activities.`,
       tags: ['React', 'Node.js', 'Bootstrap', 'MySQL'],
-      image: 'idesa.png',
+      image: 'idesa_new.png',
       // github: '#',
       demo: 'https://newuniverse.io/nexilis/idesa-app/index.html'
     },
     {
-      title: 'BJB App',
-      description: 'BJB Appis a digital banking service application from bank bjb that makes it easy for customers to access various financial services online. Through this application, users can conduct banking transactions anytime, anywhere, safely, quickly, and conveniently.',
+      title: 'Crypto App',
+      description: 'Virtoo offers a simple and transparent crypto trading experience for Indonesian users. With a modern interface and a focus on portfolio value, Virtoo helps investors understand digital asset price movements in a simple, fast, and interactive way.',
       tags: ['React', 'Node.js', 'Bootstrap', 'MySQL'],
-      image: 'bjb.png',
+      image: 'cryptoapp_new.png',
       // github: '#',
-      demo: 'https://newuniverse.io/nexilis/bjb-app/index.html'
+      demo: 'https://newuniverse.io/nexilis/cryptoapp/index.html#/'
     },
     {
       title: 'Digixplatform',
       description: 'DigiXplatform is a web platform or portal designed to assist users with digital solutions. This web portal was created in collaboration with Nexilis (EasySoft) and Telkomsel.',
       tags: ['PHP', 'HTML', 'Javascript', 'Bootstrap', 'MySQL'],
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'digixplatform.png',
       // github: '#',
       // demo: '#'
     }
@@ -63,7 +63,7 @@ export default function Projects() {
         <div className="row g-4">
           {projects.map((project, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
-              <div className="card h-100 border-0 shadow-md project-card card-hover">
+              <div className="card h-100 border-1 shadow-md project-card card-hover">
                 <div className="overflow-hidden">
                   <img
                     src={project.image}
